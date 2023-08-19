@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    text-align: center;
+}
+
+#header {
+    color: darkblue;
+    background-color: peachpuff;
+    height: 100px;
+}
+
+li {
+    display: inline;
+    margin: 25px;
+}
+
+/* Design Guide */
+
+div {
+    border: black solid 2px;
+}
+
+#design {
+    margin-bottom: 40px;
+}
+
+div h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+div h3 {
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.colors li {
+    display: inline-block;
+    padding: 20px;
+    
+}
+
+.flamingo-med {
+    color: white;
+    background-color: hsl(1, 98%, 62%);
+}
+
+.flamingo-light {
+    color: black;
+    background-color: hsl(1, 80%, 90%);
+    padding: 5px;
+}
+
+.flamingo-dark {
+    color: white;
+    background-color: hsl(1, 81%, 24%);
+}
+
+.flamingo-accent {
+    color: white;
+    background-color: hsl(1, 100%, 49%);
+}
+
+.flamingo-text {
+    color: white;
+    background-color:hsl(1, 96%, 10%)
+}
+
+.ubuntu-norm {
+    font-family: Ubuntu, "sans serif";
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+.ubuntu-ital {
+    font-family: Ubuntu, "sans serif";
+    font-weight: 300;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.ubuntu-bold {
+    font-family: Ubuntu, "sans serif";
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.ssp-norm {
+    font-family: "Source Code Pro", serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.ssp-ital {
+    font-family: "Source Code Pro", serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.ssp-bold {
+    font-family: "Source Code Pro", serif;
+    font-weight: bold;
+    font-size: 24px;
+
+}
