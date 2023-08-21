@@ -1,3 +1,5 @@
+/* Universal Styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,9 @@ body {
     
 }
 
-#header {
+/* Header Styling */
+
+.header {
     color: white;
     background-color: hsl(1, 98%, 62%);
     height: 10rem;
@@ -50,6 +54,7 @@ li {
     margin: 25px;
     border: 1px solid hsl(1, 96%, 10%);
     border-radius: 5px;
+    box-shadow: 3px 6px 6px hsl(1, 96%, 10%);
     background-color: white;
     color: hsl(1, 96%, 10%);
     padding: 20px;
@@ -62,40 +67,58 @@ li:hover {
     color: white;
 }
 
+li:active {
+    box-shadow: 0px 0px 0px;
+}
+
+/* Introduction Styling */
+
 main {
     position: relative;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 40rem;
     border: 2px solid hsl(1, 96%, 10%);
     margin: 2px;
     background-image: url("./flamingo 1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
 }
 
 .intro {
     position: relative;
     top: 10%;
-    left: 25%;
+    left: 20%;
     height: 30rem;
-    width: 40rem;
-    border: 2px solid hsl(1, 96%, 10%);
-    background-color: hsl(0, 0%, 98%);
+    width: 50rem;
+    border: 4px solid hsl(1, 100%, 49%);
+    background-color: hsl(1, 95%, 99%);
     border-radius: 10px;
-    border-bottom: 4px solid hsl(0, 100%, 2%);
-    border-right: 4px solid hsl(0, 100%, 2%);
+    box-shadow: 10px 20px 20px hsl(1, 96%, 10%);
 }
 
 .intro p {
     font-style: italic;
     font-family: Georgia, serif;
     font-size: 20px;
+    font-weight: bold;
     text-align: center;
     color: hsl(1, 96%, 10%);
-    
-    
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+@keyframes largest {
+    0% {font-size: 20px;}
+    100% {font-size: 36px;}
+}
+
+@keyframes larger {
+    0% {font-size: 20px;}
+    100% {font-size: 26px;}
 }
 
 .intro-1 {
@@ -103,6 +126,13 @@ main {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+    animation-name: largest;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 .intro-2 {
@@ -110,6 +140,13 @@ main {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+    letter-spacing: 0.2rem;
+    animation-name: larger;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .intro-3 {
@@ -117,6 +154,13 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    letter-spacing: 0.2rem;
+    animation-name: larger;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
 }
 
 .intro-4 {
@@ -124,7 +168,13 @@ main {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+    letter-spacing: 0.2rem;
+    animation-name: larger;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
 }
 
 .intro-5 {
@@ -132,7 +182,162 @@ main {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    letter-spacing: 0.2rem;
+    animation-name: larger;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition-timing-function: ease-in-out;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+/* Projects Styling */
+
+.projects {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40rem;
+    width: auto;
+    border: 2px solid hsl(1, 96%, 10%);
+    margin: 2px;
+    background-image: url("./flamingo 1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.projects h1 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: hsl(1, 96%, 10%);
+}
+
+img {
+    height: 300px;
+    width: 300px;
+    border: 3px solid hsl(1, 81%, 24%);
+    border-radius: 10px;
+}
+
+img:hover {
+    filter: saturate(3);
+}
+
+img:active {
+    filter:grayscale(1);
+}
+
+.photo-1 {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    display: inline-block;
+    background-color: white;
+    padding: 1rem;
+    border: 3px solid hsl(1, 100%, 49%);
+    border-radius: 10px;
+}
+
+.photo-2 {
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    display: inline-block;
+    background-color: white;
+    padding: 2rem;
+    border: 2px solid hsl(1, 100%, 49%);
+    border-radius: 10px;
+}
+
+.photo-3 {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    display: inline-block;
+    background-color: white;
+    padding: 2rem;
+    border: 2px solid hsl(1, 100%, 49%);
+    border-radius: 10px;
+}
+
+figcaption {
+    font-family: "Source Code Pro", "sans serif";
+    color: hsl(1, 96%, 10%);
+    font-weight: bold;
+}
+
+/* Skillset Styling */
+
+.skills {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40rem;
+    border: 2px solid hsl(1, 96%, 10%);
+    margin: 2px;
+    background-image: url("./flamingo 1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     
+}
+
+.skills h1 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    color: hsl(1, 96%, 10%);
+}
+
+.skills h2 {
+    margin-bottom: 1rem;
+}
+
+.skills h3, p {
+    text-align: left;
+    padding-left: 5rem;
+    line-height: 1.5;
+}
+
+.skills h3 {
+    text-decoration: underline;
+}
+
+.skillset {
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    height: 33%;
+    width: 100%;
+    border: 2px solid hsl(1, 96%, 10%);
+    background-color:hsla(1, 100%, 49%, 0.2);
+
+}
+
+.education {
+    position: absolute;
+    top: 52%;
+    left: 0%;
+    height: 45%;
+    width: 100%;
+    border: 2px solid hsl(1, 96%, 10%);
+    background-color: hsla(1, 100%, 49%, 0.2); 
+}
+ .education p {
+    font-style: italic;
+    line-height: 1.2;
+ }
+
+details {
+    text-align: left;
+    padding-left: 5rem;
 }
 
 /* Design Guide */
